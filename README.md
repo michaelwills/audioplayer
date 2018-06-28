@@ -9,7 +9,7 @@ Just import the fork, which is named `audioplayersbg` (mind the 'sbg'), instead 
 ```
   dependencies:
     ...
-    audioplayersbg: ^0.5.2
+    audioplayersbg: ^0.5.3
 ```
 
 Also, in `0.2.0`, I've added the ability to disable logs with:
@@ -17,16 +17,6 @@ Also, in `0.2.0`, I've added the ability to disable logs with:
 ```
     AudioPlayer.logEnabled = false;
 ```
-
-In `0.3.0`, it supports iOS as well (thanks, @feroult)
-
-In `0.4.0`, volume control support was added (thanks, @pauldemarco)
-
-In `0.4.1`, a bug in iOS regard the seek functionality was fixed (thanks, @cosmok)
-
-In `0.5.0`, there was a huge change on Android code to improve performance (thanks, @the4thfloor)
-
-In `0.5.1`, there was a fix to work with Dart 2 (thanks, @efortuna)
 
 # Original Readme
 
