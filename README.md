@@ -1,17 +1,15 @@
 # AudioPlayers
 
-This is a fork of [rxlabz's audioplayer](https://github.com/rxlabz/audioplayer), with the difference that it supports playing multiple audios at the same time, and exposes volume controls.
+This is a fork of [Juan Potter's audioplayers](https://github.com/juanpotter/audioplayer), with the difference that it plays the audio in the background without muting other audio playing in other apps.
 
-It has the exact same API, but now you can create several new AudioPlayers, each will be handled individually.
+It has the exact same API.
 
-Before you could only ever have one instance of the player, otherwise one would override the other.
-
-Just import the fork, which is named `audioplayers` (mind the 's'), instead of the original:
+Just import the fork, which is named `audioplayersbg` (mind the 'sbg'), instead of the original:
 
 ```
   dependencies:
     ...
-    audioplayers: ^0.5.2
+    audioplayersbg: ^0.5.2
 ```
 
 Also, in `0.2.0`, I've added the ability to disable logs with:
@@ -62,7 +60,7 @@ To use this plugin :
   dependencies:
     flutter:
       sdk: flutter
-    audioplayer:
+    audioplayersbg:
 ```
 
 - instantiate an AudioPlayer instance
