@@ -44,7 +44,24 @@ FlutterMethodChannel *_channel;
   if (self) {
       players = [[NSMutableDictionary alloc] init];
   }
+
+  [self initAudioStream];
+  
   return self;
+}
+
+- (void)initAudioStream {
+ AVAudioSession *session = [AVAudioSession sharedInstance];
+    if (session) {
+        NSError *setCategoryError = nil;
+        BOOL success = [session setCategory:AVAudioSessionCategoryAmbient error:&setCategoryError];
+        if (success) {
+            NSError *activationError = nil;
+            [session setActive:YES error:&activationError];
+        } else {
+            NSLog(@"Failed to set music category to ambient. May interrupt other audio.");
+        }
+    } 
 }
 
 
